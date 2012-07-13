@@ -1,6 +1,6 @@
 chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
 	if(/http:\/\/www\.google\.com.*/.test(details.url)){
-		httpsUrl=details.url.replace(/http/,'https');
+		var	httpsUrl=details.url.replace(/http/,'https');
 		chrome.tabs.update({url:httpsUrl});
 	}	
 });
