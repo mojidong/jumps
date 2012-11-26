@@ -1,3 +1,7 @@
 chrome extensions
 
 google search jumps https
+
+<script>
+alert(1);
+</script>
